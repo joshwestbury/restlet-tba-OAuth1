@@ -30,11 +30,10 @@ const axios = require('axios');
 
 async function main(requestBody, config) {
     try {
-        let oauth = new NetSuiteOAuth(config);
-        console.log(oauth);
-        let NetSuiteAuth = oauth.createOauth();
+        const oauth = new NetSuiteOAuth(config);
+        const NetSuiteAuth = oauth.createOauth();
 
-        var response = await axios({
+        const response = await axios({
             method: oauth.method,
             url: oauth.url,
             data: JSON.stringify(requestBody),
