@@ -6,7 +6,7 @@ A package that creates OAuth1 Auth Header for making requests to NetSuite RESTle
 
 Provide a config.json file that contains the following information:
 
-```
+```json
 {
     "accountId": "{{account id}}",
     "method": "{{method}}",
@@ -22,11 +22,11 @@ Provide a config.json file that contains the following information:
 
 Here is an example of a post request using Axios
 
-```
+```js
 const NetSuiteOAuth = require('./app.js');
 const axios = require('axios');
 
-async function main(payload, config) {
+async function main(requestBody, config) {
     let oauth = new NetSuiteOAuth(config);
     let NetSuiteAuth = oauth.createOauth();
 
@@ -37,7 +37,7 @@ async function main(payload, config) {
             'Content-Type': 'application/json',
             Authorization: NetSuiteAuth.authHeader,
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(requestBody),
     };
 
     var response = await axios({
