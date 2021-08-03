@@ -51,4 +51,4 @@ async function main(requestBody, config) {
 
 ## Attribution
 
-Package has modified original source code from: https://github.com/alejandrofierro/nsoauth1
+Package has modified source code from: https://github.com/alejandrofierro/nsoauth1
