@@ -11,9 +11,9 @@ Provide a config.json file that contains the following information:
     "accountId": "{{account id}}",
     "method": "{{method}}",
     "consumerKey": "{{consumer key}}",
-    "consumerSecret": "consumer secret}}",
+    "consumerSecret": {{"consumer secret}}",
     "tokenId": "{{token id}}",
-    "tokenSecret": "token secrete}}",
+    "tokenSecret": {{"token secrete}}",
     "url": "{{RESTlet url}}"
 }
 ```
