@@ -2,6 +2,8 @@
 
 A package that creates OAuth1 Auth Header for making requests to NetSuite RESTlets
 
+Package relies on original source code from https://github.com/alejandrofierro/nsoauth1
+
 ## Files
 
 Provide a config.json file that contains the following information:
@@ -14,7 +16,7 @@ Provide a config.json file that contains the following information:
     "consumerSecret": "consumer secret}}",
     "tokenId": "{{token id}}",
     "tokenSecret": "token secrete}}",
-    "url": "{{RESTlet url}}",
+    "url": "{{RESTlet url}}"
 }
 ```
 
