@@ -49,6 +49,6 @@ async function main(requestBody, config) {
 }
 ```
 
-## Usage
+## Attribution
 
 Package has modified original source code from: https://github.com/alejandrofierro/nsoauth1
