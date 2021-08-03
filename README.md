@@ -25,8 +25,10 @@ Provide a config.json file that contains the following information:
 Here is an example of a post request using Axios
 
 ```js
+// main.js
 const NetSuiteOAuth = require('./app.js');
 const axios = require('axios');
+const config = require('./config.json');
 
 async function main(requestBody, config) {
     try {
